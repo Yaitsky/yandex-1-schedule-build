@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="null">
+  <head>
+    <meta charset="utf-8">
+    <title>Расписание занятий</title>
+    <meta content="Igor Yaitsky" name="author">
+    <meta content="schedule for Yandex School by Igor Yaitsky" name="description">
+    <meta content="schedule, Yandex School" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container container--header">
+          <div class="header__logo">Яндекс</div>
+          <div class="header__text">Расписание занятий</div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="filters">
+          <div class="school-filter">
+            <select class="school-filter__select">
+              <option class="school-filter__option" value="Все школы">Все школы</option>
+              <option class="school-filter__option" value="Школа разработки интерфейсов">Школа разработки интерфейсов</option>
+              <option class="school-filter__option" value="Школа мобильной разработки">Школа мобильной разработки</option>
+              <option class="school-filter__option" value="Школа мобильного дизайна">Школа мобильного дизайна</option>
+            </select>
+          </div>
+          <div class="teacher-filter">
+            <div class="teacher-filter__text">Поиск по учителю:</div>
+            <input class="teacher-filter__input" type="text" name="teacher" placeholder="Введите имя или фамилию">
+          </div>
+        </div>
+        <div class="schedule">
+          <div class="schedule__row schedule__row--head">
+            <div class="schedule__col schedule__col--wide">Название лекции</div>
+            <div class="schedule__col schedule__col--medium">Школа</div>
+            <div class="schedule__col">Учитель</div>
+            <div class="schedule__col">Аудитория</div>
+            <div class="schedule__col">Дата</div>
+          </div>
+          <div class="schedule__list"></div>
+        </div>
+        <div class="teacher"><img class="teacher__photo" src="" alt="Фото учителя">
+          <div class="teacher__info">
+            <div class="teacher__name"></div>
+            <div class="teacher__job"></div>
+            <div class="teacher__text"></div>
+            <div class="teacher__block">
+              <button class="teacher__button">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__text">Тестовое задание разработал Игорь Яицкий, 2017</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
